@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Пожертвования</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="icon.png" rel="shorcut icon">
+	</head>
+	<body>
+		<div class="content" id="Content">
+			<div class="noBlock" align="center" id="MainBlock">
+				<h1>Пожертвования</h1>
+				<div class="container">
+					<hr>
+					<div class="elements-noBlock">
+						<p>У Вас пока нет сборов.<br>
+						Начните доброе дело.
+						</p><br>
+						<button id="make" onclick="choose();">Создать сбор</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="choose" align="center" id="chooseBlock">
+				<a href="index.html"><img src="https://raw.githubusercontent.com/VKCOM/icons/658c9285402e91b27cdc2b3c9253821bc0d8e970/src/svg/28/chevron_back_28.svg" width="25" height="25" class="cansel"></a>
+				<h1>Тип сбора</h1>
+				<div class="container">
+					<hr>
+					<div class="buttons">
+						<a onclick="SborA();"><div class="A-button">
+							<img src="https://raw.githubusercontent.com/VKCOM/icons/658c9285402e91b27cdc2b3c9253821bc0d8e970/src/svg/28/target_outline_28.svg" class="icon1" width="30" height="30">
+							<h5>Целевой сбор</h5>
+							<p>Когда есть определённая цель</p>
+							<img src="https://raw.githubusercontent.com/VKCOM/icons/658c9285402e91b27cdc2b3c9253821bc0d8e970/src/svg/24/browser_forward_24.svg" width="25" height="25" class="line">
+						</div></a>
+						<br>
+						<a onclick="SborB();"><div class="B-button">
+							<img src="https://raw.githubusercontent.com/VKCOM/icons/658c9285402e91b27cdc2b3c9253821bc0d8e970/src/svg/36/calendar_outline_36.svg" class="icon1" width="30" height="30">
+							<h5>Регулярный сбор</h5>
+							<p>Если помощь нужна ежемесячно</p>
+							<img src="https://raw.githubusercontent.com/VKCOM/icons/658c9285402e91b27cdc2b3c9253821bc0d8e970/src/svg/24/browser_forward_24.svg" width="25" height="25" class="line">
+						</div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="Aim" align="center" id="aim">
+				<a href="index.html"><img src="https://raw.githubusercontent.com/VKCOM/icons/658c9285402e91b27cdc2b3c9253821bc0d8e970/src/svg/28/chevron_back_28.svg" width="25" height="25" class="cansel1"></a>
+				<h1>Целевой сбор</h1>
+				<div class="container">
+					<hr>
+					<br>
+					<div class="aimElements">
+						<div class="imgNew" align="center">
+							<div class="imgEL">
+							<a href="#"><img src="https://raw.githubusercontent.com/VKCOM/icons/658c9285402e91b27cdc2b3c9253821bc0d8e970/src/svg/28/picture_outline_28.svg" width="23" height="23" class="aimNewIcon"> Загрузить обложку</a>
+							</div>
+						</div>
+						<div align="left">
+							<p>Название сбора</p>
+							<input placeholder="Название сбора"><br>
+							<p>Сумма, ₽</p>
+							<input placeholder="Сколько нужно собрать"><br>
+							<p>Цель</p>
+							<input placeholder="Например, лечение человека"><br>
+							<p>Описание</p>
+							<input placeholder="На что подойдут деньги и как они кому помогут?"><br>
+							<p>Куда получать деньги</p>
+							<input value="Счёт VK Pay 1234" readonly>
+							<img src="https://raw.githubusercontent.com/VKCOM/icons/658c9285402e91b27cdc2b3c9253821bc0d8e970/src/svg/28/chevron_down_outline_28.svg" width="25" height="25" class="DownLine" ><br>
+							<button id="next" onclick="next_page();">Далее</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="Mes" align="center" id="mes">
+				<a href="index.html"><img src="https://raw.githubusercontent.com/VKCOM/icons/658c9285402e91b27cdc2b3c9253821bc0d8e970/src/svg/28/chevron_back_28.svg" width="25" height="25" class="cansel1"></a>
+				<h1>Регулярный сбор</h1>
+				<div class="container">
+					<hr>
+					<br>
+					<div class="aimElements">
+						<div class="imgNew" align="center">
+							<div class="imgEL">
+							<a href="#"><img src="https://raw.githubusercontent.com/VKCOM/icons/658c9285402e91b27cdc2b3c9253821bc0d8e970/src/svg/28/picture_outline_28.svg" width="23" height="23" class="aimNewIcon"> Загрузить обложку</a>
+							</div>
+						</div>
+						<div align="left">
+							<p>Название сбора</p>
+							<input placeholder="Название сбора"><br>
+							<p>Сумма, ₽</p>
+							<input placeholder="Сколько нужно собрать"><br>
+							<p>Цель</p>
+							<input placeholder="Например, поддержка приюта"><br>
+							<p>Описание</p>
+							<input placeholder="На что подойдут деньги и как они кому помогут?"><br>
+							<p>Куда получать деньги</p>
+							<input value="Счёт VK Pay 1234" readonly>
+							<img src="https://raw.githubusercontent.com/VKCOM/icons/658c9285402e91b27cdc2b3c9253821bc0d8e970/src/svg/28/chevron_down_outline_28.svg" width="25" height="25" class="DownLine" ><br>
+							<p>Автор</p>
+							<input value="Матвей Правосудов" readonly>
+							<img src="https://raw.githubusercontent.com/VKCOM/icons/658c9285402e91b27cdc2b3c9253821bc0d8e970/src/svg/28/chevron_down_outline_28.svg" width="25" height="25" class="DownLine2" ><br>
+							<button id="next" >Далее</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<div class="another" id="another">
+			<div class="noBlock" align="center" id="MainBlock">
+				<a href="index.html"><img src="https://raw.githubusercontent.com/VKCOM/icons/658c9285402e91b27cdc2b3c9253821bc0d8e970/src/svg/28/chevron_back_28.svg" width="25" height="25" class="cansel"></a>
+				<h1>Дополнительно</h1>
+				<div class="container">
+					<hr>
+					<div class="anotherEl" align="left">
+						<p>Автор</p>
+						<input value="Матвей Правосудов" readonly>
+						<img src="https://raw.githubusercontent.com/VKCOM/icons/658c9285402e91b27cdc2b3c9253821bc0d8e970/src/svg/28/chevron_down_outline_28.svg" width="25" height="25" class="DownLine2" ><br>
+						<p>Сбор завершится</p>
+						<div class="checkBox" align="left">
+							<input type="radio" checked value="dz" name="chDate"> Когда соберём сумму<br>
+							<input type="radio" checked name="chDate" value="dx"> В определённую дату<br>
+						</div>
+						<div class="date">
+							<p>Дата окончания</p>
+							<input value="Матвей Правосудов" readonly disabled placeholder="Выберите дату">
+							<img src="https://raw.githubusercontent.com/VKCOM/icons/658c9285402e91b27cdc2b3c9253821bc0d8e970/src/svg/28/chevron_down_outline_28.svg" width="25" height="25" class="DownLine2" ><br>
+						</div>
+						<button disabled>Создать сбор</button>
+					</div>
+				</div>
+			</div>
+
+	<script src="script.js"></script>
+	</body>
+</html>
